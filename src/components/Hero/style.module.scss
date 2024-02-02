@@ -1,0 +1,100 @@
+.hero{
+    position: relative;
+    display: flex;
+    height: 110vh;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 10px;
+
+    .container{
+
+        .imgContainer{
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, rgba(172,193,195,1) 12%, rgba(163,183,185,1) 13%, rgba(0,0,0,1) 54%);
+            
+
+            .img{
+                transform: scale(1.10);  
+                background: radial-gradient(circle, rgba(172,193,195,1) 12%, rgba(163,183,185,1) 13%, rgba(0,0,0,1) 54%);            
+            }
+        }
+        .sliderContainer{
+            position: absolute;
+            top: calc(100vh - 300px) ;
+ 
+            .slider{
+                 position: relative;
+                 white-space: nowrap;
+                 display: flex;
+ 
+                 .sliderText{
+                     margin: 0px;
+                     color:white;
+                     font-size: 220px;
+                     font-weight: 500;
+                 }
+
+                 .sliderText:nth-of-type(2){
+                    position: absolute;
+                    left: 100%;
+                 }
+            }
+         }
+
+        .iconContainer{
+            .icon1{
+                position: absolute;
+                top: 4%;
+                left: 30%;
+                font-size:80px;
+                color:white;
+                transform: rotate(-12deg)
+            }
+            .icon2{
+                position: absolute;
+                top: 5%;
+                right: 35%;
+                font-size:70px;
+                color:white;
+                transform: rotate(6deg)
+            }
+            .icon3{
+                position: absolute;
+                top: 28%;
+                right: 29%;
+                font-size:80px;
+                color:white;
+                transform: rotate(12deg)
+            }
+            .icon4{
+                position: absolute;
+                top: 28%;
+                left: 25%;
+                font-size:80px;
+                color:white;
+                transform: rotate(-12deg)
+            }
+
+            .icon5{
+                position: absolute;
+                top: 50%;
+                left: 29%;
+                font-size:80px;
+                color:white;
+                transform: rotate(18deg)
+            }
+            .icon6{
+                position: absolute;
+                top: 50%;
+                right: 33%;
+                font-size:80px;
+                color:white;
+                transform: rotate(-18deg)
+            }
+        }
+    }
+}
