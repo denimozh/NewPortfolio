@@ -7,8 +7,10 @@ import Projects from "../components/Projects"
 import Header from "../components/Header"
 import Preloader from "../components/Preloader"
 import About from "../components/About"
+import Contact from "../components/Contact"
 import Cursor from "@/components/Cursor/Cursor";
 import { AnimatePresence } from "framer-motion";
+import Marquee from "react-fast-marquee";
 
 
 export default function Home() {
@@ -21,12 +23,37 @@ export default function Home() {
   let time = Math.PI / 2;
   let reqId = null;
   let x = 0.5;
+  const projects = [
+    {
+      title1: "Jomor",
+      title2: "Design",
+      src: "jomor_design.jpeg"
+    },
+    {
+      title1: "La",
+      title2: "Grange",
+      src: "la_grange.jpeg"
+    },
+    {
+      title1: "Deux Huit",
+      title2: "Huit",
+      src: "deux_huit_huit.jpeg"
+    },
+    {
+      title1: "Nothing",
+      title2: "Design Studio",
+      src: "nothing_design_studio.png"
+    },
+    {
+      title1: "Mambo",
+      title2: "Mambo",
+      src: "mambo_mambo.jpeg"
+    }
+  ]
+
   useEffect( () => {
     (
       async () => {
-        const LocomotiveScroll = (await import('locomotive-scroll')).default
-        const locomotiveScroll = new LocomotiveScroll();
-
         setTimeout( () => {
           setIsloading(false);
         }, 1400)
@@ -97,8 +124,24 @@ export default function Home() {
             <path ref={path}></path>
           </svg>
       </div>
-      <div style={{height:"30vh"}}></div>
-      <Projects />
+      <div style={{height:"35vh"}}></div>
+      <div className={styles.mainDiv}>
+        <div className={styles.marqueeDiv}>
+          <Marquee className={styles.mainText} speed={200}>
+            <p>Featured Projects-</p>
+            <p>Featured Projects-</p>
+          </Marquee>
+        </div>
+        <div className={styles.gallery}>
+            {
+              projects.map( project => {
+                return <Projects project={project}/>
+              })
+            }
+        </div>
+      </div>
+      <div style={{height:"35vh"}}></div>
+      <Contact/>
     </main>
   );
 }
