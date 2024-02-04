@@ -1,3 +1,5 @@
+
+
 .line{
     height: 1px;
     width: 100%;
@@ -28,4 +30,32 @@
 .line .box:hover{
     height: 150px;
     top: -75px;
+}
+
+.mainDiv {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   
+
+.gallery{
+    width: 70%;
+    color: white;
+    padding-top: 20vh;
+  }
+
+.mainText{
+    font-size: 150px;
+    color: black;
+    overflow: hidden;
+}
+
+.marqueeDiv{
+    background-color: white;
+    color:black;
+    height:200px;
+    display: flex;
+    justify-content: center;
 }

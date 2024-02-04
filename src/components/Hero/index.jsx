@@ -26,9 +26,6 @@ const index = () => {
 
     useEffect( () => {
         gsap.registerPlugin(ScrollTrigger)
-        gsap.to(logo.current, {
-
-        })
         gsap.to(slider.current, {
         
             scrollTrigger: {
