@@ -80,7 +80,7 @@ export default function index({value}){
       <div className={styles.mainContainer}>
         <div className={styles.icon1}>
           <MagneticComponent>
-            <a><SiLinkedin /></a>
+            <a href='https://www.linkedin.com/in/deni-mozh-4066bb26a/'><SiLinkedin/></a>
           </MagneticComponent>
         </div>
         <div className={styles.container}>
@@ -93,7 +93,7 @@ export default function index({value}){
         </div>
         <div className={styles.icon2}>
           <MagneticComponent>
-            <a><SiGithub /></a>
+            <a href='https://github.com/denimozh'><SiGithub /></a>
           </MagneticComponent>
         </div>
       </div>
