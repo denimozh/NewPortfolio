@@ -1,3 +1,44 @@
 .container{
     color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+    padding-top: 100px;
+
+
+    .text{
+        font-size:80px;
+        padding-bottom: 30px;
+    }
+
+    .bubble{
+        background: #8077EE;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:30px;
+    }
+    
+    .contact{
+        display:flex;
+        justify-content: space-between;
+        padding-top: 100px;
+
+        .gmail{
+            background: #8077EE;
+            padding: 30px;
+
+            border-radius: 50px;
+            font-size:30px;
+        }
+    }
+}
+
+.icon{
+    color:white;
+    font-size:80px
 }

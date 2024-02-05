@@ -3,6 +3,13 @@ body{
   background-color:  black;
   cursor:none;
   overflow-x: hidden;
+  overflow-y: scroll; /* Add the ability to scroll */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .custom-cursor{
@@ -28,4 +35,9 @@ body{
   letter-spacing: 1px;
   display: none;
   color: white;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
 }
