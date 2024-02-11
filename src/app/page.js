@@ -16,7 +16,7 @@ import Marquee from "react-fast-marquee";
 export default function Home() {
 
   const [isLoading, setIsloading] = useState(true);
-  const paragraph1 = "Hi I'm Denis : A FrontEnd Developer - Based in London, UK. My TechStack Includes : NextJS, Typescript, React, TailwindCSS. I also know how to expertly use Docker and Github."
+  const paragraph1 = "Hi I'm Denis : A FrontEnd Developer. My TechStack Includes : NextJS, Typescript, React, TailwindCSS. I also know how to expertly use Docker and Github."
 
   const path = useRef(null);
   let progress = 0;
@@ -25,28 +25,28 @@ export default function Home() {
   let x = 0.5;
   const projects = [
     {
-      title1: "Jomor",
-      title2: "Design",
+      title1: "Portland",
+      title2: "Books",
       src: "jomor_design.jpeg"
     },
     {
-      title1: "La",
-      title2: "Grange",
+      title1: "Sushi",
+      title2: "Dev",
       src: "la_grange.jpeg"
     },
     {
-      title1: "Deux Huit",
-      title2: "Huit",
+      title1: "Find A",
+      title2: "Car",
       src: "deux_huit_huit.jpeg"
     },
     {
-      title1: "Nothing",
-      title2: "Design Studio",
+      title1: "Dev",
+      title2: "Tube",
       src: "nothing_design_studio.png"
     },
     {
-      title1: "Mambo",
-      title2: "Mambo",
+      title1: "React",
+      title2: "Movies",
       src: "mambo_mambo.jpeg"
     }
   ]
