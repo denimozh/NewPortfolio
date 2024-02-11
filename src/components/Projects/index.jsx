@@ -15,12 +15,14 @@ export default function index({project}) {
     const { title1, title2, src } = project;
 
     return (
-        <div onMouseEnter={() => {setIsActive(true)}} onMouseLeave={() => {setIsActive(false)}} className={styles.project}>
-            <p>{title1}</p>
-            <motion.div variants={anim} animate={isActive ? "open" : "closed"} className={styles.imgContainer}>
-                <img src={`/images/${src}`}></img>
-            </motion.div>
-            <p>{title2}</p>
-        </div>
+        <a className='cursor-none'>
+            <div onMouseEnter={() => {setIsActive(true)}} onMouseLeave={() => {setIsActive(false)}} className={styles.project}>
+                <p>{title1}</p>
+                <motion.div variants={anim} animate={isActive ? "open" : "closed"} className={styles.imgContainer}>
+                    <img src={`/images/${src}`}></img>
+                </motion.div>
+                <p>{title2}</p>
+            </div>
+        </a>
     )
 }
