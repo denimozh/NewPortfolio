@@ -58,7 +58,7 @@ const Hero = () => {
     <motion.main variants={slideUp} initial="initial" animate="enter" className={styles.hero}>
         <div className={styles.container}>
             <div className={styles.imgContainer}>
-                <img alt="" src="/images/image.png" className={styles.img} id="img"/>
+                <img alt="" src="/images/me.png" className={styles.img} id="img"/>
                 <div className={styles.bgGrad}></div>
             </div>
 
