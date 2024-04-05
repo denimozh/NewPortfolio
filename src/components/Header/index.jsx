@@ -4,7 +4,7 @@ import styles from './style.module.scss'
 import MagneticComponent from '../MagneticComponent';
 
 
-const index = () => {
+const Index = () => {
   return (
     <header>
         <nav className={styles.container}>
@@ -27,4 +27,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
