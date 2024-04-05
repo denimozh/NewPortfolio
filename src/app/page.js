@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import Hero from "../components/Hero"
 import Projects from "../components/Projects"
 import Header from "../components/Header"
-import Preloader from "../components/Preloader/Index"
+import Preloader from "../components/Preloader"
 import About from "../components/About"
 import Contact from "../components/Contact"
 import Cursor from "@/components/Cursor/Cursor";
