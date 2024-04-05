@@ -2,15 +2,15 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { useEffect, useRef, useState } from "react";
-import Hero from "../components/Hero/Index"
-import Projects from "../components/Projects"
-import Header from "../components/Header/Index"
-import Preloader from "../components/Preloader/Index"
-import About from "../components/About/Index"
-import Contact from "../components/Contact/Index"
+import Projects from "@/components/Projects"
+import Header from "@/components/Header"
+import Preloader from "@/components/Preloader"
+import About from "@/components/About"
+import Contact from "@/components/Contact"
 import Cursor from "@/components/Cursor/Cursor";
 import { AnimatePresence } from "framer-motion";
 import Marquee from "react-fast-marquee";
+import Hero from "@/components/Hero";
 
 
 export default function Home() {

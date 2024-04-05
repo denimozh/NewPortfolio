@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import {motion} from "framer-motion"
 import { slideUp } from './anim';
 
-const Index = () => {
+const Preloader = () => {
   const plane = useRef(null);
   const maxRotate = 45;
 
@@ -37,4 +37,4 @@ function Text3d({primary, secondary}) {
     )
   }
 
-export default Index
+export default Preloader
