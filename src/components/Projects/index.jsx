@@ -10,7 +10,7 @@ const anim = {
     closed: {width: 0}
 }
 
-export default function index({project}) {
+export default function Index({project}) {
     const [isActive, setIsActive] = useState(false);
     const { title1, title2, src } = project;
 

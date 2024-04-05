@@ -15,7 +15,7 @@ import MagneticComponent from '../MagneticComponent';
 import { SiDocker } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 
-const index = () => {
+const Index = () => {
 
     const firstText = useRef(null);
     const secondText = useRef(null);
@@ -106,4 +106,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
