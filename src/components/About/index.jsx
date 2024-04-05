@@ -6,7 +6,7 @@ import { SiGithub } from "react-icons/si";
 import MagneticComponent from '../MagneticComponent';
 import { useScroll, motion, useTransform } from 'framer-motion'
 
-export default function Index({value}){
+export default function About({value}){
   const element = useRef(null);
   const path = useRef(null);
   let progress = 0;

@@ -4,7 +4,7 @@ import MagneticComponent from '../MagneticComponent';
 import { SiGithub } from "react-icons/si";
 import { SiLinkedin } from "react-icons/si";
 
-const Index = () => {
+const Contact = () => {
   return (
     <div>
         <hr></hr>
@@ -27,4 +27,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default Contact

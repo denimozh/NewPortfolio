@@ -15,7 +15,7 @@ import MagneticComponent from '../MagneticComponent';
 import { SiDocker } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 
-const Index = () => {
+const Hero = () => {
 
     const firstText = useRef(null);
     const secondText = useRef(null);
@@ -58,7 +58,7 @@ const Index = () => {
     <motion.main variants={slideUp} initial="initial" animate="enter" className={styles.hero}>
         <div className={styles.container}>
             <div className={styles.imgContainer}>
-                <img alt="" src="/images/steve-jobs-gray.png" className={styles.img} id="img"/>
+                <img alt="" src="/images/image.png" className={styles.img} id="img"/>
                 <div className={styles.bgGrad}></div>
             </div>
 
@@ -106,4 +106,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default Hero
